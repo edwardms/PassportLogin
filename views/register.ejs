@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Passport login</title>
+    </head>
+
+    <body>
+        <h1>Register</h1>
+        <form action="/register" method="post">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="nameInput" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="emailInput" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="passwordInput" required>
+            </div>
+            <button style="font-size: 1.2rem" type="submit">Submit</button>
+        </form>
+        <br>
+
+        <button><a href="/login" style="text-decoration: none; color: black; font-size: 1.2rem">Login</a></button>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Passport login</title>
+    </head>
+
+    <body>
+        <h1>Login</h1>
+        
+        <% if (messages.error) { %>
+        <h3><%= messages.error%></h3>
+        <% } %>
+
+        <form action="/login" method="post">
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="emailInput" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="passwordInput" required>
+            </div>
+            <button style="font-size: 1.2rem" type="submit">Submit</button>
+        </form>
+        <br>
+        
+        <button><a href="/register" style="text-decoration: none; color: black; font-size: 1.2rem">Register</a></button>
+    </body>
+</html>
